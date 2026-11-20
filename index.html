@@ -11,32 +11,51 @@
     <!-- Favicon (transparentní logo pro lištu prohlížeče) -->
     <link rel="icon" type="image/png" href="obrazky/logo.png" />
 
-    <!-- OpenGraph & Twitter Cards (neprůhledné logo s pozadím pro vyhledávače a sdílení) -->
+    <!-- OpenGraph & Twitter Cards (neprůhledné logo s pozadím 1200x630 pro vyhledávače a sdílení bez deformace) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Laskavě — Celotělové a ájurvédské masáže v okolí Havlíčkův Brod | Zuzana Klazarová" />
     <meta property="og:description" content="Celotělové a ájurvédské masáže v okolí Havlíčkův Brod. Jste ve stresu či přetížení? Hledáte individuální péči? Dopřejte svému tělu i mysli laskavou péči ve studiu Laskavě." />
     <meta property="og:site_name" content="Laskavě — Masážní studio" />
     <meta property="og:locale" content="cs_CZ" />
-    <meta property="og:image" content="/obrazky/logopozadi.png" />
+    <meta property="og:image" content="/obrazky/logopozadi-og.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="4100" />
-    <meta property="og:image:height" content="4100" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Laskavě — Masážní studio" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Laskavě — Celotělové a ájurvédské masáže v okolí Havlíčkův Brod | Zuzana Klazarová" />
     <meta name="twitter:description" content="Celotělové a ájurvédské masáže v okolí Havlíčkův Brod. Dopřejte svému tělu i mysli laskavou péči ve studiu Laskavě." />
-    <meta name="twitter:image" content="/obrazky/logopozadi.png" />
+    <meta name="twitter:image" content="/obrazky/logopozadi-og.png" />
 
-    <!-- Schema.org Structured Data (logo pro Google / vyhledávače) -->
+    <!-- Schema.org Structured Data (logo pro Google / vyhledávače s přesnými poměry stran) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "HealthAndBeautyBusiness",
         "name": "Laskavě — Masážní studio",
         "description": "Celotělové a ájurvédské masáže v okolí Havlíčkův Brod. Individuální a laskavá péče pro tělo i mysl.",
-        "logo": "/obrazky/logopozadi.png",
-        "image": "/obrazky/logopozadi.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/obrazky/logopozadi.png",
+          "contentUrl": "/obrazky/logopozadi.png",
+          "width": 1200,
+          "height": 1200
+        },
+        "image": [
+          {
+            "@type": "ImageObject",
+            "url": "/obrazky/logopozadi-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          {
+            "@type": "ImageObject",
+            "url": "/obrazky/logopozadi.png",
+            "width": 1200,
+            "height": 1200
+          }
+        ],
         "telephone": "+420737904012",
         "email": "zuzana@laskave.net",
         "address": {
